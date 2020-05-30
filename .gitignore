@@ -1,0 +1,58 @@
+.idea
+.metadata
+build
+dist
+node_modules
+typings
+server/typings
+classes
+out
+logs
+
+### Js/Ts ###
+*.css.map
+
+.gradle
+/build/
+builds/
+cache/
+.gradletasknamecache
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode
+
+# Package Files #
+*.jar
+*.war
+*.ear
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+*.log
+*.pdf
+
+# Mac OS
+.DS_Store
+
