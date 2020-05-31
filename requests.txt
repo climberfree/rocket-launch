@@ -1,0 +1,17 @@
+Registrate new scientist
+POST http://localhost:8090/scientists/registrate
+{ "email":"elon@gmail.com",    "password":"password", "name": "Elon", "surname":  "Musk"}
+
+Login to system
+POST http://localhost:8090/scientists/login
+{ "email":"elon@gmail.com",    "password":"password"}
+Response:
+{"email":"elon@gmail.com","status":"SUCCESS","loginAt":"2020-05-31T23:23:45.846"}
+
+Get login history
+POST http://localhost:8090/scientists/loginHistory?email=elon@gmail.com
+Response:
+[{"email":"elon@gmail.com","status":"SUCCESS","loginAt":"2020-05-31T23:23:45.846"}]
+
+
+

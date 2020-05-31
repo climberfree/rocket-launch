@@ -35,8 +35,8 @@ public class ScientistServiceImpl implements ScientistService {
 
     @Override
     @Transactional
-    public ScientistDto create(ScientistDto dto) {
-        return converter.convertToDto(scientistRepository.save(converter.convertToEntity(dto)));
+    public void create(ScientistDto dto) {
+        scientistRepository.save(converter.convertToEntity(dto));
     }
 
     @Override
