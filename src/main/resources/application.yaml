@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rocket_station
+    username: yuliafrishko
+    password:
+    initialization-mode: always
+    initialize: true
+    schema: classpath:/db/schema.sql
+    continue-on-error: true
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: none
+        show-sql: true
+
+server:
+  port: 8090
+
